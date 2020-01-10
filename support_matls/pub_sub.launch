@@ -1,6 +1,0 @@
-<launch>
-  <node pkg="pubsub_example" type="publisher.py" name="pub_node"  output="screen">
-  </node>
-  <node pkg="pubsub_example" type="subscriber.py" name="sub_node"  output="screen">
-  </node>
-</launch>
