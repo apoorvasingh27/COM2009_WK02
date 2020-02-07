@@ -32,7 +32,7 @@ def delta(start_odom, start_RPY, end_odom, end_RPY):
                         end_odom.position.y, end_odom.position.z,
                         end_RPY[0],end_RPY[1],end_RPY[2]]},
                  index = ['linear_x','linear_y','linear_z',
-                          'theta_x','theta_y','theta_z'])
+                          'theta_x(Roll)','theta_y(Pitch)','theta_z(Yaw)'])
 
     df['delta'] = df['end'] - df['start']
     df = df[['start', 'end', 'delta']]
